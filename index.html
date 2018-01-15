@@ -1,6 +1,7 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
 <!DOCTYPE html>
-<html><head>
+<html>
+  <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -8,6 +9,7 @@
     <title>Lab</title>
   </head>
   <body>
+    <!--ENCABEZADO CON VERSION XS Y MD-->
     <header class="container-fluid">
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,24 +33,111 @@
         </div>
       </nav>
     </header>
-    <!--comentarios-->
-    <section class="container-fluid img-taxi d-flex align-items-center">
-
-        <div class="col-md-5 col-sm-9 col-xs-11 offset-md-7 offset-sm-3 offset-xs-1 jumbotron">
-          <h1 class="display-6">Disfruta del viaje<br>
-          Eres dueño de tu tiempo</h1>
-          <p class="h4">Viaja con <span><img src="assets\images\logoBlanco.png" alt="Logo Blanco"></span></p>
-          <button type="button" class="btn btn-light lead">REGISTRATE</button>
-          <div class="row"><span class="offset-md-1 col-md-4"><hr class="my-9"></span> <span class="col-md-2">O bien</span> <span class="col-md-4"><hr class="my-9"></span></div>
-          <button type="button" class="btn btn-light btn-lg">Light</button>
-        </div>
-
-
-
+    <!--PRIMERA SECCION FONDO IMAGEN Y CUADRO PRINCIPAL EN VERSION XS Y MD-->
+    <section class="container-fluid img-taxi d-flex align-items-center pr-0 pb-5">
+      <div class="col-md-5 offset-md-7 jumbotron back-color d-none d-md-block">
+        <h1 class="display-6">Disfruta del viaje<br>
+        Eres dueño de tu tiempo</h1>
+        <p class="h4">Viaja con <span><img src="assets\images\logoBlanco.png" alt="Logo Blanco"></span></p>
+        <button type="button" class="btn btn-light lead">REGISTRATE</button>
+        <div class="row"><span class="offset-md-1 col-md-4"><hr class="my-9"></span> <span class="col-md-2">O bien</span> <span class="col-md-4"><hr class="my-9"></span></div>
+        <button type="button" class="btn btn-light btn-lg">Conviértete en un conductor</button>
+      </div>
+      <div class="col-sm-9 col-xs-11 offset-sm-3 offset-xs-1 jumbotron back-color d-md-none ">
+        <h2 class="display-6">Comienza a viajar<br>con <span><img src="assets\images\logoBlanco.png" alt="Logo Blanco"></span></h2>
+        <button type="button" class="btn btn-light lead">Descargue el app</button>
+      </div>
     </section>
+    <!--SEGUNDA SECCION IPHONE CON VERSION XS Y MD-->
+    <section class="container-fluid background-two-section pl-0">
+      <div class="pt-5 d-md-none">
+        <div class="ml-3 mr-3 border d-md-none">
+          <div class="row pt-5 pl-5">
+              <h2 class="color-white col-sm-12 text-center">La nueva app</h2>
+              <img src="assets\images\iPhone6Plus.png" class="rounded mx-auto d-block pb-5" alt="iPhone6Plus">
+          </div>
+        </div>
+      </div>
+      <div class="pt-5 pb-5 d-none d-md-block">
+        <div class="col-md-11 border-left-0 border">
+          <div class="row pt-5 pl-5">
+            <img src="assets\images\iPhone6Plus.png" class="rounded float-left pb-5 col-md-4 offset-md-1" alt="...">
+            <div class="col-md-4 offset-md-1">
+              <h2 class="color-white">Descarga la nueva app</h2>
+              <p class="card-text lead font color-white mt-4">La versión actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.<br>
+              Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente dónde ir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="d-md-none card-text lead font color-white mt-4 offset-sm-1">Llega a tu destino aún más rápido</p>
+      </div>
+    </section>
+    <section class="container-fluid img-conduce d-flex align-items-center pr-0">
+        <div class="col-md-5 offset-md-7 jumbotron back-opacity">
+            <h1 class="display-6 color-white">Conduce cuando quieras</h1>
+            <p class="color-white">LabCar es una opción flexible para alcanzar<br>
+            tus metas financieras.</p>
+            <button type="button" class="btn btn-warning color-white">Convertete en conductor</button>
+      </div>
+    </section>
+    <section class="container-fluid background-two-section">
+      <div class="row pt-5">
+        <div class="offset-md-1 col-md-4">
+          <h4 class="color-white">Tarifas</h4>
+          <h5 class="color-white">Consulta las tarifas aquí</h5>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><img src="assets\images\shape.png" alt=""></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su punto de partida">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><img src="assets\images\shape2.png" alt=""></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su destino">
+            </div>
+            <button type="submit" class="btn btn-light">¡Trazar tu ruta!</button>
+          </form>
+        </div>
+        <div class="offset-md-1 col-md-5 pr-0">
+          <iframe class="border p-1"src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15025.661878919034!2d-99.2065204!3d19.694928100000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1515977632018" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <img class="pt-5 pl-5"src="assets\images\logoBlanco.png" alt="">
+      <hr class="my-9">
+      <div class="row ">
+        <ul class="offset-md-2 col-md-3">
+          <li><a href="#" class="color-white">Viaja</a></li>
+          <li><a href="#" class="color-white">Conduce</a></li>
+          <li><a href="#" class="color-white">Ciudades</a></li>
+          <li><a href="#" class="color-white">Ciudades</a></li>
+          <li><a href="#" class="color-white">Entrega</a></li>
+          <li><a href="#" class="color-white">Cómo funciona?</a></li>
+          <li><a href="#" class="color-white">Países</a></li>
+          <li><a href="#" class="color-white">Seguridad</a></li>
+        </ul>
+        <ul class="offset-md-1 col-md-3">
+          <li><a href="#" class="color-white">Oportunidades</a></li>
+          <li><a href="#" class="color-white">Nuestra Historia</a></li>
+          <li><a href="#" class="color-white">Api de LabCar</a></li>
+          <li><a href="#" class="color-white">Eventos</a></li>
+          <li><a href="#" class="color-white">Desarrolladores</a></li>
+          <li><a href="#" class="color-white">Servicios</a></li>
+          <li><a href="#" class="color-white">Laboratoria</a></li>
+          <li><a href="#" class="color-white">Coders</a></li>
+        </ul>
+        <div class="col-md-2">
+          <img class="pb-3"src="assets\images\appstore.png" alt="appstore">
+          <img src="assets\images\enBadgeWebGeneric.png" alt="appGoogle">
+        </div>
+      </div>
+      <hr class="my-9">
+      <p class="color-white">© 2017 Labcar technologies Inc.</p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
-
-</body></html>
+  </body>
+</html>

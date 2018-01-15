@@ -1,8 +1,46 @@
 /* Los estilos de tu proyecto */
+footer{
+  background-color: #2B2B2B;
+  height: 100vh;
+}
 .img-taxi{
   background-image: url("../assets/images/taxi.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
+}
+.back-color{
+  background-color: #F7B617;
+}
+.back-opacity{
+  background-color: rgba(0, 0, 0, 0.5);
+  color:#000;
+  margin-top: 1.3rem;
+  padding: 7.5rem;
+}
+.background-two-section{
+  background-color: #F7B617;
+  background-size: contain;
+  background-clip: padding-box;
+}
+.font{
+  font-size: 1.58rem;
+}
+.color-white{
+  color: #FFFFFF;
+}
+.img-conduce{
+  background-image: url("../assets/images/conduce.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.form-control{
+  background-color: transparent;
+}
+li{
+  list-style: none;
+  padding: .7rem;
 }
