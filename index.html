@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable = no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab</title>
   </head>
   <body>
@@ -43,7 +44,7 @@
         <div class="row"><span class="offset-md-1 col-md-4"><hr class="my-9"></span> <span class="col-md-2">O bien</span> <span class="col-md-4"><hr class="my-9"></span></div>
         <button type="button" class="btn btn-light btn-lg">Conviértete en un conductor</button>
       </div>
-      <div class="col-sm-9 col-xs-11 offset-sm-3 offset-xs-1 jumbotron back-color d-md-none ">
+      <div class="col-sm-9  offset-sm-3 jumbotron back-color d-md-none ">
         <h2 class="display-6">Comienza a viajar<br>con <span><img src="assets\images\logoBlanco.png" alt="Logo Blanco"></span></h2>
         <button type="button" class="btn btn-light lead">Descargue el app</button>
       </div>
@@ -52,9 +53,9 @@
     <section class="container-fluid background-two-section pl-0">
       <div class="pt-5 d-md-none">
         <div class="ml-3 mr-3 border d-md-none">
-          <div class="row pt-5 pl-5">
+          <div class="row pt-5 pl-4 pr-4">
               <h2 class="color-white col-sm-12 text-center">La nueva app</h2>
-              <img src="assets\images\iPhone6Plus.png" class="rounded mx-auto d-block pb-5" alt="iPhone6Plus">
+              <img src="assets\images\iPhone6Plus.png" class="col-sm-8 mt-2 p-0 rounded mx-auto d-block pb-5" alt="iPhone6Plus">
           </div>
         </div>
       </div>
@@ -86,26 +87,29 @@
         <div class="offset-md-1 col-md-4">
           <h4 class="color-white">Tarifas</h4>
           <h5 class="color-white">Consulta las tarifas aquí</h5>
-          <form>
+          <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label for="exampleInputEmail1"><img src="assets\images\shape.png" alt=""></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su punto de partida">
+              <label for="lacation"><img src="assets/images/shape.png" alt="location"></label>
+              <input type="text" class="controls" placeholder="Ingrese su punto de partida">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1"><img src="assets\images\shape2.png" alt=""></label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su destino">
+              <label for="destination"><img src="assets/images/shape2.png" alt="destination"></label>
+              <input type="text"  placeholder="Ingrese su destino">
             </div>
-            <button type="submit" class="btn btn-light">¡Trazar tu ruta!</button>
+            <div class="form-group">
+              <button type="button" id="search" class="btn btn-light lead text-uppercase center-block">¡Trazar ruta!</button>
+            </div>
           </form>
         </div>
-        <div class="offset-md-1 col-md-5 pr-0">
-          <iframe class="border p-1"src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15025.661878919034!2d-99.2065204!3d19.694928100000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1515977632018" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="offset-md-1 col-md-5 pr-1">
+          <iframe class="border p-1"src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15025.661878919034!2d-99.2065204!3d19.694928100000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1515977632018" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
+    <!--Footeer-->
     <footer class="container-fluid">
       <img class="pt-5 pl-5"src="assets\images\logoBlanco.png" alt="">
-      <hr class="my-9">
+      <hr>
       <div class="row ">
         <ul class="offset-md-2 col-md-3 offset-sm-1 col-sm-3">
           <li><a href="#" class="color-white">Viaja</a></li>
@@ -127,9 +131,9 @@
           <li><a href="#" class="color-white">Laboratoria</a></li>
           <li><a href="#" class="color-white">Coders</a></li>
         </ul>
-        <div class="col-md-2 offset-sm-2 col-sm-1">
-          <img class="pb-3"src="assets\images\appstore.png" alt="appstore">
-          <img class="pb-3"src="assets\images\enBadgeWebGeneric.png" alt="appGoogle">
+        <div class="col-md-2 col-sm-1 margin-auto">
+          <img class="img-logo pb-3"src="assets\images\appstore.png" alt="appstore">
+          <img class="img-logo pb-3"src="assets\images\enBadgeWebGeneric.png" alt="appGoogle">
         </div>
       </div>
       <hr class="my-9">

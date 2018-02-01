@@ -9,6 +9,10 @@ li{
   list-style: none;
   padding: .7rem;
 }
+/*linea*/
+hr{
+  color: white;
+}
 /* Primer imagen de fondo*/
 .img-taxi{
   background-image: url("../assets/images/taxi.jpg");
@@ -50,7 +54,20 @@ li{
   background-size: cover;
   height: 80vh;
 }
-/* Estilo formuario*/
-.form-control{
+/* Estilo formulario*/
+.background-two-section .form-group input{
   background-color: transparent;
+  border-radius: 50px;
+  width: 80%;
+}
+/*Estilo logos flotantes*/
+.img-logo{
+  float: right;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 414px){
+  .margin-auto{
+    margin-top: -60%;
+  }
 }
